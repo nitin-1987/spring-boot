@@ -14,6 +14,7 @@ public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
+		System.out.println("Done");
 	}
 
 
@@ -31,5 +32,6 @@ public class Application {
 		UrlBasedCorsConfigurationSource urlBasedCorsConfigurationSource = new UrlBasedCorsConfigurationSource();
 		urlBasedCorsConfigurationSource.registerCorsConfiguration("/**", corsConfiguration);
 		return new CorsFilter(urlBasedCorsConfigurationSource);
+
 	}
 }
